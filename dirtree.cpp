@@ -86,7 +86,7 @@ void dirtree::expand_path(char *inpath, char *outpath)
          break;
       //  if path starts with /../ it is invalid; 
       //  just exit without doing any more work.
-      unsigned plen = (unsigned) tl - (unsigned) hd ;
+      unsigned plen = (unsigned) (tl - hd) ;
       if (plen == 0)
          break;
       //  okay, we have a valid path, but we need to find the
